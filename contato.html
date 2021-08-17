@@ -1,43 +1,73 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contato</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <ul>
+    <ul id="menu">
         <li><a href="index.html">Home</a></li>
         <li><a href="contato.html">Contato</a></li>
     </ul>
 
-    <h1>Entre em contato</h1>
+    <h1 class="text-center">Entre em contato</h1>
 
-    <form>
-        <label for="nome">Nome:</label>
-        <br>
-        <input type="text" id="nome">
-        <br>
-        <br>
-        <label for="emal">E-mail:</label>
-        <br>
-        <input type="email" name="email">
-        <br>
-        <br>
-        <label for="assunto">assunto:</label>
-        <br>
-        <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-        <br>
-        <br>
-        <button>Enviar</button>
-    </form>
+    <div class="container mb-50">
+        <div>
+            <h2>Endereço:</h2>
+            <form>
+                <label for="nome">Nome:</label>
+                <br>
+                <input type="text" id="nome">
+                <br>
+                <br>
+                <label for="emal">E-mail:</label>
+                <br>
+                <input type="email" name="email">
+                <br>
+                <br>
+                <label for="assunto">assunto:</label>
+                <br>
+                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
+                <br>
+                <br>
+                <button>Enviar</button>
+            </form>
+        </div>
 
-    <h2>Endereço:</h2>
-    <p>Av. Dr. Chucri Zaidan, 1170</p>
-    <p>São Paulo - SP</p>
+        <div class="ml-50">
+            <p>Av. Dr. Chucri Zaidan, 1170</p>
+            <p>São Paulo - SP</p>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.465690128085!2d-46.702602585363614!3d-23.623487969773798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50dca74eb971%3A0x3cc66467280e828c!2sRochaver%C3%A1%20Corporate%20Towers%20B%20-%20Av.%20Dr.%20Chucri%20Zaidan%2C%201170%20-%20Vila%20Cordeiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004794-000!5e0!3m2!1spt-BR!2sbr!4v1629140187367!5m2!1spt-BR!2sbr"
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </div>
 
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.465690128085!2d-46.702602585363614!3d-23.623487969773798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50dca74eb971%3A0x3cc66467280e828c!2sRochaver%C3%A1%20Corporate%20Towers%20B%20-%20Av.%20Dr.%20Chucri%20Zaidan%2C%201170%20-%20Vila%20Cordeiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004794-000!5e0!3m2!1spt-BR!2sbr!4v1629140187367!5m2!1spt-BR!2sbr" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.facebook.com/andrem91/" target="_blank">
+                <img class="icon-tm p-30" src="assets/img/facebook.png" alt="Logo do Facebook">
+            </a>
+            <a href="https://www.linkedin.com/in/andrem91/" target="_blank">
+                <img class="icon-tm p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin">
+            </a>
+            <a href="https://www.instagram.com/andrem91/" target="_blank">
+                <img class="icon-tm p-30" src="assets/img/instagram.png" alt="Logo do Instagram">
+            </a>
+        </div>
+
+        <p class="text-center">
+            Todos os direitos reservados: André Marques &copy2021
+        </p>
+    </footer>
 
 </body>
+
 </html>
