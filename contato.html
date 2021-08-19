@@ -23,29 +23,33 @@
             <form>
                 <label for="nome">Nome:</label>
                 <br>
-                <input type="text" id="nome">
-                <br>
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
                 <br>
                 <label for="emal">E-mail:</label>
                 <br>
-                <input type="email" name="email">
+                <input type="email" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
                 <br>
+                <label for="assunto">Assunto:</label>
                 <br>
-                <label for="assunto">assunto:</label>
+                <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div>
+                    Caracteres:
+                    <span id="contadorDeCaracter">0</span>
+                </div>
+                <div id="txtAssunto"></div>
                 <br>
-                <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
-                <br>
-                <br>
-                <button>Enviar</button>
+                <button onclick="enviar()">Enviar</button>
             </form>
         </div>
 
         <div class="ml-50">
             <p>Av. Dr. Chucri Zaidan, 1170</p>
             <p>São Paulo - SP</p>
-            <iframe
+            <iframe id="mapa"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.465690128085!2d-46.702602585363614!3d-23.623487969773798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce50dca74eb971%3A0x3cc66467280e828c!2sRochaver%C3%A1%20Corporate%20Towers%20B%20-%20Av.%20Dr.%20Chucri%20Zaidan%2C%201170%20-%20Vila%20Cordeiro%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2004794-000!5e0!3m2!1spt-BR!2sbr!4v1629140187367!5m2!1spt-BR!2sbr"
-                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()"></iframe>
         </div>
     </div>
 
@@ -67,6 +71,8 @@
             Todos os direitos reservados: André Marques &copy2021
         </p>
     </footer>
+
+    <script src="assets/js/script.js"></script>
 
 </body>
 
